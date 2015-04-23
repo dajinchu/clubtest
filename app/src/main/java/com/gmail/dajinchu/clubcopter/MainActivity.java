@@ -79,6 +79,9 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public void onConnectionInfoAvailable(WifiP2pInfo info) {
             Log.d("MainActivity", "connected to " + info.groupOwnerAddress.getHostAddress());
+            if(info.isGroupOwner){
+
+            }
         }
     };
 
