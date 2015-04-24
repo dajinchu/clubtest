@@ -12,9 +12,9 @@ public class QuadcopterActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_quad);
 
         Intent intent = getIntent();
-
     }
 
     class Receive implements Runnable{
