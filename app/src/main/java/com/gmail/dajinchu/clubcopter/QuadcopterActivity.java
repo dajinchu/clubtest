@@ -10,7 +10,7 @@ import java.io.ObjectInputStream;
 
 import ioio.lib.api.DigitalOutput;
 import ioio.lib.api.IOIO;
-import ioio.lib.api.Sequencer;
+import ioio.lib.api.PwmOutput;
 import ioio.lib.api.exception.ConnectionLostException;
 import ioio.lib.util.BaseIOIOLooper;
 import ioio.lib.util.IOIOLooper;
@@ -45,36 +45,43 @@ public class QuadcopterActivity extends IOIOActivity {
     }
 
     class Looper extends BaseIOIOLooper{
-        private Sequencer.ChannelCuePwmSpeed motor1 = new Sequencer.ChannelCuePwmSpeed();
-        private Sequencer.ChannelCue[] cues = new Sequencer.ChannelCue[]{motor1};
-        private Sequencer mSequencer;
+
+        private PwmOutput motor1;
+        private PwmOutput motor2;
+        private PwmOutput motor3;
+        private PwmOutput motor4;
         private DigitalOutput led;
 
         @Override
         public void setup() throws ConnectionLostException{
-            //At 2M hz, we need 40k time units to get to 50hz
-            final Sequencer.ChannelConfigPwmSpeed m1 = new Sequencer.ChannelConfigPwmSpeed(
-                    Sequencer.Clock.CLK_2M,40000,1000,new DigitalOutput.Spec(1));
-            final Sequencer.ChannelConfig[] configs = new Sequencer.ChannelConfig[]{m1};
+            motor1 = ioio_.openPwmOutput(1,50);
+            motor2 = ioio_.openPwmOutput(2,50);
+            motor3 = ioio_.openPwmOutput(3,50);
+            motor4 = ioio_.openPwmOutput(4,50);
             led = ioio_.openDigitalOutput(IOIO.LED_PIN);
 
-            mSequencer = ioio_.openSequencer(configs);
         }
 
         @Override
         public void loop() throws ConnectionLostException, InterruptedException{
             if(on){
-                motor1.pulseWidth=1200;
+                setAll(1200);
             }else{
-                motor1.pulseWidth=1000;
+                setAll(1000);
             }
             led.write(!on);
-            mSequencer.manualStart(cues);
         }
 
         @Override
         public void disconnected(){
             //nothing
+        }
+
+        public void setAll(int value) throws ConnectionLostException {
+            motor1.setPulseWidth(value);
+            motor2.setPulseWidth(value);
+            motor3.setPulseWidth(value);
+            motor4.setPulseWidth(value);
         }
     }
 
