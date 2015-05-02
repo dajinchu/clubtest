@@ -93,6 +93,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onSuccess() {
                 Log.i("MainActivity", "Success connection I think");
+
             }
 
             @Override

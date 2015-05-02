@@ -9,8 +9,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/usbSerialExamples" />
-            <option value="$PROJECT_DIR$/usbSerialForAndroid" />
+            <option value="$PROJECT_DIR$/iOIOLibAccessory" />
+            <option value="$PROJECT_DIR$/iOIOLibAndroid" />
+            <option value="$PROJECT_DIR$/iOIOLibAndroidDevice" />
+            <option value="$PROJECT_DIR$/iOIOLibBT" />
+            <option value="$PROJECT_DIR$/iOIOSimpleApp" />
           </set>
         </option>
       </GradleProjectSettings>

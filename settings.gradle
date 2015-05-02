@@ -1,1 +1,6 @@
-include ':app', ':usbSerialForAndroid', ':usbSerialExamples'
+include ':app'
+include ':iOIOLibAndroid'
+include ':iOIOLibAccessory'
+include ':iOIOLibAndroidDevice'
+include ':iOIOLibBT'
+include ':iOIOSimpleApp'

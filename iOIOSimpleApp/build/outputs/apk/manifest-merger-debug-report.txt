@@ -1,0 +1,110 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:2
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:4:2
+	android:versionCode
+		ADDED from AndroidManifest.xml:3:33
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-sdk
+ADDED from AndroidManifest.xml:5:2
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:5:38
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:5:12
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+application
+ADDED from AndroidManifest.xml:6:2
+	android:label
+		ADDED from AndroidManifest.xml:6:45
+	android:icon
+		ADDED from AndroidManifest.xml:6:15
+uses-library#com.android.future.usb.accessory
+ADDED from AndroidManifest.xml:7:3
+	android:required
+		ADDED from AndroidManifest.xml:8:4
+	android:name
+		ADDED from AndroidManifest.xml:7:17
+activity#ioio.examples.simple.IOIOSimpleApp
+ADDED from AndroidManifest.xml:10:3
+	android:label
+		ADDED from AndroidManifest.xml:11:55
+	android:configChanges
+		ADDED from AndroidManifest.xml:11:4
+	android:name
+		ADDED from AndroidManifest.xml:10:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:12:4
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:13:4
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:13
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:15:5
+	android:name
+		ADDED from AndroidManifest.xml:15:15
+intent-filter#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from AndroidManifest.xml:17:4
+action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:13
+intent-filter#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from AndroidManifest.xml:20:4
+action#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from AndroidManifest.xml:21:5
+	android:name
+		ADDED from AndroidManifest.xml:21:13
+meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from AndroidManifest.xml:23:4
+	android:resource
+		ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:23:15
+meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from AndroidManifest.xml:25:4
+	android:resource
+		ADDED from AndroidManifest.xml:26:5
+	android:name
+		ADDED from AndroidManifest.xml:25:15
+uses-permission#android.permission.INTERNET
+ADDED from Clubcopter:iOIOLibAndroid:unspecified:7:5
+MERGED from Clubcopter:iOIOLibAndroid:unspecified:7:5
+MERGED from Clubcopter:iOIOLibAndroid:unspecified:7:5
+MERGED from Clubcopter:iOIOLibAndroid:unspecified:7:5
+	android:name
+		ADDED from Clubcopter:iOIOLibAndroid:unspecified:7:22
+android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from AndroidManifest.xml:2:1 reason: ioio.lib has a targetSdkVersion < 4
+android:uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from AndroidManifest.xml:2:1 reason: ioio.lib has a targetSdkVersion < 4
+android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from AndroidManifest.xml:2:1 reason: ioio.lib requested WRITE_EXTERNAL_STORAGE
+uses-feature#android.hardware.usb.accessory
+ADDED from Clubcopter:iOIOLibAccessory:unspecified:7:5
+	android:required
+		ADDED from Clubcopter:iOIOLibAccessory:unspecified:9:9
+	android:name
+		ADDED from Clubcopter:iOIOLibAccessory:unspecified:8:9
+uses-permission#android.permission.BLUETOOTH
+ADDED from Clubcopter:iOIOLibBT:unspecified:7:5
+	android:name
+		ADDED from Clubcopter:iOIOLibBT:unspecified:7:22
+uses-feature#android.hardware.usb.host
+ADDED from Clubcopter:iOIOLibAndroidDevice:unspecified:7:5
+	android:required
+		ADDED from Clubcopter:iOIOLibAndroidDevice:unspecified:9:9
+	android:name
+		ADDED from Clubcopter:iOIOLibAndroidDevice:unspecified:8:9

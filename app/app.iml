@@ -87,6 +87,9 @@
     <orderEntry type="library" exported="" name="support-annotations-21.0.3" level="project" />
     <orderEntry type="library" exported="" name="usb-serial-for-android-v010" level="project" />
     <orderEntry type="library" exported="" name="support-v4-21.0.3" level="project" />
+    <orderEntry type="module" module-name="iOIOLibAndroidDevice" exported="" />
+    <orderEntry type="module" module-name="iOIOLibAndroid" exported="" />
+    <orderEntry type="module" module-name="iOIOLibAccessory" exported="" />
   </component>
 </module>
 

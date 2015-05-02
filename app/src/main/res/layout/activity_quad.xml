@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GO"
-        android:id="@+id/button2"
+        android:id="@+id/go"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:onClick="go" />
@@ -60,8 +60,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="STOP"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
+        android:id="@+id/stop"
+        android:layout_below="@+id/go"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
